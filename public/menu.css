@@ -1,0 +1,51 @@
+:root{color-scheme:dark}
+body{margin:0;padding:0;background:#11251f}
+#benteng-kampung-sore{position:relative;max-width:1540px;margin:auto;border:0;border-radius:0;background:#11251f;--panel:#f5eddc}
+#benteng-kampung-sore [hidden]{display:none!important}
+#benteng-kampung-sore.frontopen .header,#benteng-kampung-sore.frontopen .mode-strip,#benteng-kampung-sore.frontopen .footer,#benteng-kampung-sore.frontopen .court>:not(.world){display:none}
+#benteng-kampung-sore .setup,#benteng-kampung-sore .bracket,#benteng-kampung-sore .magrib-panel{display:none!important}
+#benteng-kampung-sore.frontopen .court{height:100svh;min-height:630px}
+#benteng-kampung-sore .court{height:clamp(400px,67svh,810px)}
+#front{position:absolute;inset:0;z-index:25;color:#fff8e7;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:80px clamp(22px,7vw,116px);background:linear-gradient(90deg,#102a24f7 0%,#102a24eb 23%,#102923a1 46%,#142e2625 75%),linear-gradient(0deg,#122b23b0,transparent 17%,transparent 85%,#18392c73);font:15px/1.45 system-ui,sans-serif;overflow-y:auto}
+#front .frontbar,#front .frontfoot{position:absolute;left:clamp(22px,7vw,116px);right:clamp(22px,7vw,116px);display:flex;align-items:center;gap:12px}
+#front .frontbar{top:24px;padding-bottom:15px;border-bottom:1px solid #f6e7c92f;font-size:17px}
+#front .brandmark{background:#efd192;color:#21382d;display:grid;place-items:center;width:31px;height:31px;border-radius:9px;font-size:22px}
+#front .fronttag{margin-left:auto;font-size:12px;color:#f5eed9}
+#front .frontfoot{bottom:20px;justify-content:space-between;font-size:12px;color:#dddcc5}
+#front .sheet{width:min(100%,465px)}
+#front h1{color:#fff2d9;font:500 clamp(37px,5vw,68px)/.94 Georgia,serif;letter-spacing:-.045em;margin:12px 0 17px}
+#front .home h1{font-size:clamp(68px,9vw,140px);line-height:.86;margin-bottom:28px}
+#front .home i{color:#eac17b;font-weight:normal}
+#front p{color:#e6e5d8;margin:8px 0 16px}#front .home>p{max-width:350px;font-size:17px}
+#front button{cursor:pointer;padding:10px 15px;border:1px solid #b6bd9c66;border-radius:7px;background:#28483a;color:#f7edd5;font:650 14px system-ui,sans-serif;min-height:42px}
+#front button:disabled{opacity:.5;cursor:default}#front button:focus-visible,#front :is(input,select):focus-visible{outline:3px solid #f1c36c;outline-offset:2px}
+#front .gold{background:#ebbd70;color:#1e3028;border-color:#ebbd70;display:flex;align-items:center;justify-content:space-between;gap:32px}
+#front .gold:hover{background:#f4ce89}#front .home-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#front .home-actions .gold{min-width:138px}#front button.textbtn,#front button.back{background:transparent;border-color:transparent;color:#e1e4d1}
+#front button.back{font-size:12px;padding:0;min-height:24px}
+#front .card{background:#19382ff5;border:1px solid #c4c69b55;border-radius:17px;padding:20px 24px;box-shadow:0 16px 60px #091b1650}
+#front .card h1{font-size:36px;margin:10px 0 15px}
+#front .tabs,#front .selects,#front .joinrow{display:flex;gap:8px}#front .tabs{background:#112b24;padding:3px;border-radius:8px;margin-bottom:12px}
+#front .tabs button{flex:1;background:transparent;color:#c9d3bd;border:0;min-height:35px}#front .tabs button[aria-pressed=true]{background:#42624d;color:white}
+#front label{display:grid;gap:4px;font-size:12px;color:#dddcc4;margin:6px 0;flex:1;min-width:0}
+#front input,#front select{font:500 14px system-ui,sans-serif;min-height:40px;background:#f7f2e6;color:#213b31;border:1px solid #cdc6ad;border-radius:5px;padding:5px 9px;width:100%}
+#front .card .gold{width:100%;margin-top:10px}#front .desc,#front .mapline,#front .roommeta{font-size:13px;line-height:1.42}
+#front .desc{color:#e1e4d8;margin:8px 0}#front .mapline{color:#f2ce93;margin:4px 0 8px}
+#front .joinrow{align-items:end}#front .joinrow button{margin-bottom:6px}#joinCode{text-transform:uppercase;letter-spacing:.16em}
+#front .message{color:#ffce87;font-size:13px;margin-top:5px}#front .message:empty{display:none}
+#front .invite{display:flex;justify-content:space-between;align-items:center;margin:12px 0;padding:12px;background:#112d25;border-radius:8px}
+#front .invite small{font-size:9px;letter-spacing:.15em;color:#c7cfb5}#front .invite strong{display:block;color:#ffdc9b;font-size:26px;letter-spacing:.15em}
+#front .roster{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:7px 0}#front .roster div{background:#29493c;padding:9px;border-radius:6px;line-height:1.55;font-size:13px;white-space:pre-line}
+#benteng-kampung-sore:not([data-play=tournament]) :is(.upgradehead,.upgrades){display:none}
+#benteng-kampung-sore .bar .actions{flex-wrap:wrap}
+@media(max-width:640px){#front{padding:72px 15px 45px;background:linear-gradient(90deg,#112c24e3,#172e2585),linear-gradient(0deg,#112b248f,transparent)}#front .frontbar,#front .frontfoot{left:18px;right:18px}#front .frontbar{top:13px}#front .card{padding:16px}#front .home{padding:0 7px}#front .frontfoot{bottom:12px}#benteng-kampung-sore.frontopen .court{min-height:660px}#front .home-actions .gold{min-width:104px}#front .home h1{font-size:76px}}
+@media(max-height:660px) and (min-width:641px){#front .frontbar{top:10px}#front .frontfoot{bottom:9px}#benteng-kampung-sore.frontopen .court{min-height:650px}}
+
+#netNotice{position:absolute;z-index:8;top:12px;left:50%;transform:translateX(-50%);background:#533c21;color:#ffedbc;border:1px solid #e6b968;border-radius:8px;padding:8px 12px;text-align:center;pointer-events:none}
+#front .gold span{font-variant-emoji:text}
+#benteng-kampung-sore .map-legend .you{background:#ffe58a}
+@media(max-width:640px){#front:has([data-page="setup"]:not([hidden])){justify-content:flex-start}#front .card{margin:auto 0}}
+
+#benteng-kampung-sore[data-play=classic] [data-skill=dash],#benteng-kampung-sore:not([data-play=tournament]) [data-skill=evade]{display:none}
+
+@media(max-width:450px){#front .selects{display:grid;gap:0}#front .selects label{margin:3px 0}#benteng-kampung-sore.frontopen:has([data-page=setup]:not([hidden])) .court{min-height:840px}}

@@ -1,0 +1,1 @@
+{"name":"benteng-kampung","version":"3.1.0","private":true,"description":"Bebentengan 3D untuk komputer dan ruang teman","scripts":{"start":"node server.js"},"engines":{"node":">=22"}}
